@@ -86,3 +86,5 @@ If you face issues:
   
 📜 License
 This project is licensed under the MIT License
+
+Demo Link:https://disease-prediction-ufzbnaxcphzwspex25czlm.streamlit.app/
