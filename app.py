@@ -17,12 +17,12 @@ def load_model(path):
         st.error(f"Model file not found: {path}")
         return None
 
-# Define model paths using os.path.join to ensure correct path resolution
-diabetes_model_path = os.path.join(working_dir, 'models', 'diabetes-prediction.sav')
-heart_model_path = os.path.join(working_dir, 'models', 'heart-disease-prediction-model.sav')
-parkinson_model_path = os.path.join(working_dir, 'models', 'parkinsons_model.sav')
+# Define the paths to the models
+diabetes_model_path = 'training_models/diabetes_model.sav'
+heart_model_path = 'training_models/heart-disease-prediction-model.sav'
+parkinson_model_path = 'training_models/parkinsons_model.sav'
 
-# Load models
+# Load the models using load_model()
 diabetes_model = load_model(diabetes_model_path)
 heart_model = load_model(heart_model_path)
 parkinson_model = load_model(parkinson_model_path)
